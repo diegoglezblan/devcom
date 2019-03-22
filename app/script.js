@@ -9,7 +9,7 @@ const initialState = {
 }
 app.store(async (state, event) => {
   if (state === null) state = initialState
-  console.log("aqui");
+
   switch (event.event) {
     case 'Increment':
       return { count: await getValue() }
